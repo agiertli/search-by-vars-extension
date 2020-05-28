@@ -24,10 +24,6 @@ public class KieServerDeployer {
 	private static final Logger logger = LoggerFactory.getLogger(KieServerDeployer.class);
 
 	@Autowired
-	@Qualifier("kieServerClient")
-	KieServicesClient kieServerClient;
-
-	@Autowired
 	KieServer kieServer;
 
 	private List<KJAR> kjars;
